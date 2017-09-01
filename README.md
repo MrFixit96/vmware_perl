@@ -10,7 +10,7 @@
 ## SETUP REQUIRED:
 Edit the line "my @vCenters = ('vc1', 'vc2');" to include your vCenters in fqdn format
 
-
+'''
 Commandline options are as follows:
 --host <-Switch from default of looking for vm's to looking for a host
 --find $1 <- Tells the script the name of the vm/host to look up
@@ -49,4 +49,5 @@ HOST MEMORY:		host_memcount
 MEMORY ALLOCATED:	memory GB
 STORAGE USED by VMS:	storage
 HOST WWNS:		host_wwns
+'''
 ======================================================================================================================
