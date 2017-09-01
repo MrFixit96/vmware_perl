@@ -1,13 +1,13 @@
- vmware_perl
-Perl scripts for VMware environments
+#vmware_perl
+#Perl scripts for VMware environments
 
-#################################################################################################################
-       Filename: get-vmwareinfo.pl
-       Author: James Anderton
-       Date: 5/5/2012
-       Purpose: Take a list of hosts or vm's and print out info about them to either the screen or a csv file
+====================================================================================================================
+       ##Filename: get-vmwareinfo.pl
+       ##Author: James Anderton
+       ##Date: 5/5/2012
+       ##Purpose: Take a list of hosts or vm's and print out info about them to either the screen or a csv file
 
- SETUP REQUIRED:
+##SETUP REQUIRED:
 Edit the line "my @vCenters = ('vc1', 'vc2');" to include your vCenters in fqdn format
 
 
@@ -22,7 +22,7 @@ Commandline options are as follows:
 --show_uuid <-Add in the unique identifier for the VM 
 --output_csv $2 <- Spits out a file named what you tell it
 
-############## VM Printout Section
+##================= VM Printout Section
 VM:			fq_name
 UUID:			uuid
 vCENTER:		vCenterHostName
@@ -36,7 +36,7 @@ MEMORY:			memory
 PROVISIONED STORAGE:	storage
 DATASTORES USED:	vmDataStore
 
-############## HOST Printout Section
+##================ HOST Printout Section
 
 HOST:			vmhostname
 VCENTER:		vCenterHostName
@@ -49,4 +49,4 @@ HOST MEMORY:		host_memcount
 MEMORY ALLOCATED:	memory GB
 STORAGE USED by VMS:	storage
 HOST WWNS:		host_wwns
-#################################################################################################################
+======================================================================================================================
