@@ -64,4 +64,7 @@ HOST WWNS:		host_wwns
 maxthreads $1 		<- Maximum number of threads to run at a time
 input_param_list $2	<- Name of file with list of parameters append to command and thread out in sequence
 command $3		<- Fully Pathed command to thread out in sequence
+
+For Example
+$ ./command_threader.pl --command "ls" --input_param_list list
 ```

@@ -17,7 +17,7 @@ use FindBin;
 use Getopt::Long;
 
 ###########Initialize variables
-my ($thread_limit,$maxthreads,$batch_list);
+my ($thread_limit,$maxthreads,$command,$batch_list);
 
 ###########setup commandline args
 GetOptions ("maxthreads=i" => \$maxthreads,
