@@ -21,7 +21,7 @@ my ($thread_limit,$maxthreads,$batch_list);
 
 ###########setup commandline args
 GetOptions ("maxthreads=i" => \$maxthreads,
-		"command=i" => \$command,
+		"command=s" => \$command,
 		"input_param_list=s" => \$batch_list)
 or die("Error in command line arguments\n");
 
