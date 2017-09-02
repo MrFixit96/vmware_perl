@@ -17,11 +17,10 @@ use FindBin;
 use Getopt::Long;
 
 ###########Initialize variables
-my ($thread_limit,$maxthreads,$ofname,$batch_list,$host);
+my ($thread_limit,$maxthreads,$batch_list);
 
 ###########setup commandline args
 GetOptions ("maxthreads=i" => \$maxthreads,
-           "output_csv=s"   => \$ofname,
            "input_list=s"   => \$batch_list)
 or die("Error in command line arguments\n");
 

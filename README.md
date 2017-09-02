@@ -50,3 +50,18 @@ STORAGE USED by VMS:	storage
 HOST WWNS:		host_wwns
 ```
 ============================================================================
+
+
+=========================================================================================
+#### NAME: command_threader.pl
+#### Date: 12/29/2013
+#### Author: James Anderton
+#### Purpose: Take a command and an input parameters list file and create a thread for each item up to $maxthreads at a time and loop until its done.
+========================================================================================
+
+#### Commandline Options are as follows:
+```
+maxthreads $1 		<- Maximum number of threads to run at a time
+input_param_list $2	<- Name of file with list of parameters append to command and thread out in sequence
+command $3		<- Fully Pathed command to thread out in sequence
+```
