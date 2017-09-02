@@ -21,8 +21,8 @@ my ($thread_limit,$maxthreads,$batch_list);
 
 ###########setup commandline args
 GetOptions ("maxthreads=i" => \$maxthreads,
-			"command=i" => \$command,
-           "input_param_list=s"   => \$batch_list)
+		"command=i" => \$command,
+		"input_param_list=s" => \$batch_list)
 or die("Error in command line arguments\n");
 
 
@@ -76,10 +76,10 @@ $q=undef;
 ########################################################################################
 sub Worker_Thread(){
 	#bring in the search item from the input list
-	my $job =shift;
+	my $params =shift;
 	print  "Starting $job.\n";
 	if ($search){
 		#Use a system call to kick off the original single threaded single input script as a worker thread
-		system("$job");
+		system("$command $params");
 	}#endIF
 }#endIF
