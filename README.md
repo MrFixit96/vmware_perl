@@ -52,12 +52,12 @@ HOST WWNS:		host_wwns
 ============================================================================
 
 
-=========================================================================================
+============================================================================
 #### NAME: command_threader.pl
 #### Date: 12/29/2013
 #### Author: James Anderton
 #### Purpose: Take a command and an input parameters list file and create a thread for each item up to $maxthreads at a time and loop until its done.
-========================================================================================
+============================================================================
 
 #### Commandline Options are as follows:
 ```
