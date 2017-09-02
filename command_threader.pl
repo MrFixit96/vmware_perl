@@ -78,7 +78,7 @@ sub Worker_Thread(){
 	#bring in the search item from the input list
 	my $params =shift;
 	print  "Starting $command $params.\n";
-	if ($search){
+	if ($params && $command){
 		#Use a system call to kick off the original single threaded single input script as a worker thread
 		system("$command $params");
 	}#endIF
